@@ -1,6 +1,6 @@
 <?php
 	if ($_GET["password"]) == "banana") {
-		echo "<div>"}
+		echo "hey"}
 	else {
 		echo "Sorry, wrong password"
 	}
