@@ -5,3 +5,13 @@
 		echo "Sorry, wrong password"
 	}
 ?>	
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
 <form>
 	<input type="text" name="password">
 	<input type="submit">
@@ -10,3 +16,9 @@
 		echo "Sorry, wrong password"
 	}
 ?>	
+
+</body>
+</html>
+
+
+
