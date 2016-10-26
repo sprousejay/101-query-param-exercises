@@ -1,11 +1,34 @@
-<form>
-	<input type="text" name="banana">
+<?php
+
+	function greeting($name) 
+	{
+			$name = $_GET["name"];
+
+		if ($name == "banana") {
+			echo "Hello, you are special";
+		} 
+		elseif ($name == "Jay") {
+			echo "You have a great name.";
+		}
+
+		else {
+			echo "Hello $name, you are NOT special";
+		}
+	}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+	<input type="text" name="name">
 	<input type="submit">
+
+	<?php greeting($name); ?>
 </form>
 
-<?php
-	if ($_GET["name"]) == "banana") {
-		echo "Hello, you are special"}
-	else {
-		echo "Hello you are NOT special"}
-?>
+</body>
+</html>
