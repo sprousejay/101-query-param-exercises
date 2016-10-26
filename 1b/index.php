@@ -21,7 +21,7 @@
 	<input type="text" name="password">
 	<input type="submit">
 
-	<?php echo password(); ?>
+	<?php echo password($password); ?>
 </form>
 
 </body>
