@@ -1,8 +1,9 @@
 <?php
-	if ($_GET["password"]) == "banana") {
-		echo "hey"}
+	if ($_GET == "banana") {
+		echo "hey";
+	}
 	else {
-		echo "Sorry, wrong password"
+		echo "Sorry, wrong password";
 	}
 ?>	
 

@@ -1,24 +1,28 @@
+<?php
+	function password($password) {
+		$password = strtolower($_GET["password"]);
+
+		if ($password == "banana") {
+			echo "hey";
+		}
+		else {
+			echo "Sorry, wrong password";
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 </head>
 <body>
-<form>
+<form method="get" action="">
 	<input type="text" name="password">
 	<input type="submit">
-</form>
 
-<?php
-	if ($_GET["password"]) == "banana") {
-		echo "<div>"}
-	else {
-		echo "Sorry, wrong password"
-	}
-?>	
+	<?php echo password(); ?>
+</form>
 
 </body>
 </html>
-
-
-
