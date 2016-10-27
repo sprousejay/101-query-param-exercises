@@ -6,6 +6,15 @@
 
 		if ($operator == 'add') {
 			echo $num1 + $num2;
+		} 
+		elseif ($operator == 'subtraction') {
+			echo $num1 - $num2;
+		}
+		elseif ($operator == 'multiplication') {
+			echo $num1 * $num2;
+		}
+		elseif ($operator == 'division') {
+			echo $num1 / $num2;
 		}
 	}
 ?>
