@@ -2,30 +2,28 @@
 <html>
 <head>
 	<title>Color Change</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" type="text/css" href="./4/style1.css">
 
+<?php theme(); ?>
 </head>
 
 <body>
 
-
-
 <?php
-session_start();
-if(isset($_GET['color']))
-{
-	$color = $_GET['color'];
-	$_SESSION['color']=$color;
-}
+	function theme() {
+		$theme = $_GET['theme'];
 
-$color_session = $_SESSION['color'];
-echo "bgcolor=$color_session";
-
+		if ($theme == 'blue') {
+			echo '<link rel="stylesheet" type="text/css" href="./4/style1.css">';
+		} 
+		elseif ($theme == 'red') {
+			echo '<link rel="stylesheet" type="text/css" href="./4/style2.css">';
+		}
+	}
 ?>
 
 Choose Background Color<br>
-<a href="?color="red">img src="images/red.jpg"></a>
-<a href="?color="blue">img src="images/blue.jpg></a>
+<a href="?theme=red">Switch Theme</a>
 
 
 </body>
