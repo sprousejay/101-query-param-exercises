@@ -1,17 +1,44 @@
-Insert two numbers in the next form and hit submit button 
-<form action="calculation.php" method="post"> 
-	Firstnumber: <input name="num1" type="text" />
-	Secondnumber: <input name="num2" type="text" /> 
-	<input type="submit" />
-</form>
-
-
 <?php
-	$num1 = $_POST['num1'];
-	$num2 = $_POST['num2'];
-	$a = $num1 + $num2;
-	$b = $num1 - $num2; {
-	echo "The sum of the two numbers is ". $a;}
-	{
-	echo "The difference of the two numbers is ". $b;}
+	function calculator() {
+		$num1 = $_GET['num1'];
+		$num2 = $_GET['num2'];
+		$operator = $_GET['operator'];
+
+		if ($operator == 'add') {
+			echo $num1 + $num2;
+		} 
+		elseif ($operator == 'subtraction') {
+			echo $num1 - $num2;
+		}
+		elseif ($operator == 'multiplication') {
+			echo $num1 * $num2;
+		}
+		elseif ($operator == 'division') {
+			echo $num1 / $num2;
+		}
+	}
 ?>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<input type="text" name="num1">
+			<select name="operator">
+			  <option value="add">+</option>
+			  <option value="subtraction">-</option>
+			  <option value="multiplication">x</option>
+			  <option value="division">/</option>
+			</select>
+		<input type="text" name="num2">
+		<input type="submit">
+	</form>
+	<?php echo calculator(); ?>
+	
+</body>
+</html>
